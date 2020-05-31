@@ -10,25 +10,26 @@ browser_driver.find_element_by_name('username').send_keys('student')
 browser_driver.find_element_by_id('id_password').send_keys('qatester')
 browser_driver.find_element_by_css_selector('#login-form > div.submit-row > input[type=submit]').click()
 
+sleep(3)
 
+browser_driver.find_element_by_css_selector('#content-main > div > table > tbody > tr.model-blog > td:nth-child(2) > a').click()
 
-sleep(5)
+sleep(3)
 
-browser_driver.get('https://google.com/')
+browser_driver.find_element_by_css_selector('#container > div.breadcrumbs > a:nth-child(1)').click()
 
-search_input = browser_driver.find_element_by_css_selector('#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input')
+sleep(3)
 
-search_input.send_keys('python')
+browser_driver.find_element_by_css_selector('#content-main > div > table > tbody > tr.model-blogger > td:nth-child(2) > a').click()
 
-sleep(2)
+sleep(3)
 
-browser_driver.implicitly_wait(10)
+browser_driver.find_element_by_name('full_name').send_keys('Ali Alireza')
 
-search_btn = browser_driver.find_element_by_xpath('/html/body/div/div[3]/form/div[2]/div[1]/div[2]/div[2]/div[2]/center/input[1]')
-search_btn = WebDriverWait(browser_driver, 10).until(browser_driver.find_element_by_xpath('/html/body/div/div[3]/form/div[2]/div[1]/div[2]/div[2]/div[2]/center/input[1]'))
+sleep(3)
 
-
-search_btn.click()
+browser_driver.find_element_by_css_selector('#blogger_form > div > div > input.default').click()
+sleep(3)
 
 browser_driver.close()
 

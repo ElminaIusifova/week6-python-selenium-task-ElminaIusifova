@@ -11,6 +11,6 @@ browser_driver.find_element_by_css_selector('#login-form > div.submit-row > inpu
 
 
 
-sleep(10)
+sleep(5)
 
 browser_driver.close()
