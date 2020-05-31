@@ -1,7 +1,7 @@
 from selenium import webdriver
 from time import sleep
 
-browser_driver = webdriver.Chrome(executable_path='/Users/elminaiusifova/Desktop/Python/week6-python-selenium-task-ElminaIusifova/geckodriver')
+browser_driver = webdriver.Firefox(executable_path='/Users/elminaiusifova/Desktop/Python/week6-python-selenium-task-ElminaIusifova/geckodriver')
 
 browser_driver.get('http://35.225.243.133/admin/login/')
 
